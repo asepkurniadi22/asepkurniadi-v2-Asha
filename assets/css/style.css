@@ -5,6 +5,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -407,6 +412,7 @@ h6 {
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 50px;
   font-size: 18px;
+  line-height: 30px;
 }
 
 #hero .btn-get-started {
@@ -486,9 +492,10 @@ h6 {
 
 @media (max-width: 991px) {
   #hero {
-    height: 120vh;
+    height: 900px;
     text-align: center;
   }
+
   #hero .animated {
     -webkit-animation: none;
     animation: none;
@@ -503,16 +510,43 @@ h6 {
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 20px;
   }
   #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
+    font-size: 16px;
   }
+  #hero p {
+    font-size: 16px;
+  }
+
   #hero .hero-img img {
     width: 70%;
+  }
+  #hero .btn-get-started {
+    margin-left: 30px;
+    font-size: 12px;
+    font-weight: 100;
+  }
+
+  #hero .btn-watch-video {
+    font-size: 12px;
+  }
+
+  #hero .btn-watch-video i {
+    font-size: 12px;
+    /* margin-right: 8px; */
+  }
+
+  #hero .social-links {
+    font-size: 12px;
+    margin-right: 45px;
+  }
+  #hero .social-links a {
+    font-size: 12px;
+    padding: 5px 0px;
+    margin-right: 4px;
+    width: 24px;
+    height: 24px;
   }
 }
 
@@ -520,39 +554,7 @@ h6 {
   #hero .hero-img img {
     width: 80%;
   }
-  #hero .btn-get-started {
-    font-size: 16px;
-    padding: 10px 24px 11px 24px;
-  }
 }
-
-/* iphone X = 375x812  sm dgn 575*/
-/* @media (max-width: 375px) {
-  #hero .hero-img img {
-    width: 80%;
-  }
-  #hero .btn-get-started {
-    font-size: 16px;
-    padding: 10px 24px 11px 24px;
-  }
-} */
-
-/* Moto G/Galaxy S5 = 360x640  sm dgn 575*/
-/* @media (max-width: 360px) {
-  #hero .hero-img img {
-    width: 80%;
-    height: 65vh;
-  }
-
-  #hero .container {
-    padding-top: 50px;
-  } 
-
-  #hero .btn-get-started {
-    font-size: 16px;
-    padding: 10px 24px 11px 24px;
-  }
-} */
 
 @-webkit-keyframes up-down {
   0% {
